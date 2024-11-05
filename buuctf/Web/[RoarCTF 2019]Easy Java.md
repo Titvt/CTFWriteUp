@@ -53,9 +53,9 @@
 
 `com.wm.ctf.FlagController`更改下载路径为`WEB-INF/classes/com/wm/ctf/FlagController.class`
 
-![image-20231112224219961](.\img\9-1.png)
+![](.\img\9-1.png)
 
-![image-20231112224529720](.\img\9-2.png)
+![](.\img\9-2.png)
 
 或者下载后用`jadx-gui`反编译
 

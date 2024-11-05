@@ -8,4 +8,4 @@
 
 `D盾`扫
 
-![image-20231125161052165](G:/CTFWriteUp/buuctf/Misc/img/14-1.png)
+![](./img/14-1.png)

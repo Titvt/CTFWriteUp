@@ -55,7 +55,7 @@ if($function == 'highlight_file'){
 
 在`phpinfo`中找到了，`auto_append_file`说明自动在文件中执行该文件代码，说明要读取这个文件
 
-![image-20231113180630471](G:/CTFWriteUp/buuctf/Web/img/13-3.png)
+![](./img/13-3.png)
 
  `extract($_POST)`就是将`post`的内容作为这个函数的参数。
 
@@ -78,7 +78,7 @@ echo(serialize($_SESSION));
 
 生成序列化后的字符串，取需要逃逸的部分，这里取的部分为红框里的部分
 
-![](G:/CTFWriteUp/buuctf/Web/img/[安洵杯 2019]easy_serialize_php-1.png)
+![](./img/[安洵杯2019]easy_serialize_php-1.png)
 
 在红框部分前面`随意加一个字符`，我这里加了`C`
 
@@ -92,7 +92,7 @@ echo(serialize($_SESSION));
 
 然后看之前红框部分前面这里到添加的`C`字符这部分的长度来决定填充字符
 
-![](G:/CTFWriteUp/buuctf/Web/img/[安洵杯 2019]easy_serialize_php-2.png)
+![](./img/[安洵杯2019]easy_serialize_php-2.png)
 
 这里需要逃逸`24`个字符，一个`flag`能逃逸`4`个，所以需要`6`个`flag`
 
@@ -100,13 +100,13 @@ echo(serialize($_SESSION));
 _SESSION[user]=flagflagflagflagflagflag&_SESSION[function]=C";s:8:"function";s:10:"show_image";s:3:"img";s:20:"ZDBnM19mMWFnLnBocA==";}
 ```
 
-![](G:/CTFWriteUp/buuctf/Web/img/[安洵杯 2019]easy_serialize_php-3.png)
+![](./img/[安洵杯2019]easy_serialize_php-3.png)
 
 因为`/d0g3_fllllllag`转为`base64`之后长度也是`20`，和`d0g3_f1ag.php`长度相同
 
 所以直接改`img`部分反序列化的值即可，`L2QwZzNfZmxsbGxsbGFn`
 
-![](G:/CTFWriteUp/buuctf/Web/img/[安洵杯 2019]easy_serialize_php-4.png)
+![](./img/[安洵杯2019]easy_serialize_php-4.png)
 
 [本人博客](https://cmacckk.github.io/2021/06/05/phpUnserialize/#php%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E5%AD%97%E7%AC%A6%E4%B8%B2%E9%80%83%E9%80%B8%E5%8F%98%E7%9F%AD)
 

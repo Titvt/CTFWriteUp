@@ -14,4 +14,4 @@
 python3 .\firepwd.py .\logins.json
 ```
 
-![image-20231206103401615](./img/108-3.png)
+![](./img/108-3.png)

@@ -6,4 +6,4 @@
 
 ## 解题
 
-![](./img/[CSAWQual 2016]i_got_id-1.png)
+![](./img/[CSAWQual2016]i_got_id-1.png)

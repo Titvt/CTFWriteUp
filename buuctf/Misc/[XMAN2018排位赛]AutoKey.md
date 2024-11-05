@@ -14,7 +14,7 @@
 
 使用`UsbKeyboardDataHacker`解密流量包
 
-![image-20231206152104983](./img/122-1.png)
+![](./img/122-1.png)
 
 去掉`CAP、DEL`，处理`AutoKey`密文时，在删除`DEL`的时候要把`DEL`前面的字符也删掉,得到`autokey`密文
 

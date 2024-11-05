@@ -493,7 +493,7 @@ if ($result_info['redirect_url'])
   - orange的[A New Era of SSRF -Exploiting URL Parser in Trending Programming Languages!](https://www.blackhat.com/docs/us-17/thursday/us-17-Tsai-A-New-Era-Of-SSRF-Exploiting-URL-Parser-In-Trending-Programming-Languages.pdf)中提到的方法，利用的是curl和其他库解析url的差异性
 
     orange的[A New Era of SSRF -Exploiting URL Parser in Trending Programming Languages!](https://www.blackhat.com/docs/us-17/thursday/us-17-Tsai-A-New-Era-Of-SSRF-Exploiting-URL-Parser-In-Trending-Programming-Languages.pdf)中提到的方法，利用的是curl和其他库解析url的差异性
-    ![img](.\img\buuctf\ssrf_curl.JPG)
+    ![](.\img\buuctf\ssrf_curl.JPG)
 
     - 不过这个方法在curl较新的版本里被修掉了，buu上的环境也无法使用
 
@@ -510,7 +510,7 @@ if ($result_info['redirect_url'])
     - `ip2long('127.1')`会返回`false`，这里可以绕过过滤
     - 但是`gethostbyname`在linux下会把`127.1`变为`127.0.0.1`，所以这题是无法使用的。不过windows下经过`gethostbyname`后依然是`127.1`
     - curl是支持`127.1`这样的写法的，但这样发出去的http请求是有问题的。因为http包中的host头被设为了`127.1`，apache会返回一个400 Bad Request
-    - ![img](.\img\buuctf\127.1.JPG)
+    - ![](.\img\buuctf\127.1.JPG)
     - 既然是http包的问题，那么用gopher协议构造一个正常的http请求即可。不过这因为`gethostbyname`的原因，这个方法这里用不了
 
 - ip进制绕过

@@ -48,7 +48,7 @@ if __name__ == '__main__':
 
 解压后的文件为`qr.txt`,内容如下
 
-![image-20231128164532453](./img/55-1.png)
+![](./img/55-1.png)
 
 因为是`40000`行`RGB`,所以尺寸为`200*200`,绘图
 
@@ -68,4 +68,4 @@ for x, y in product(range(max), range(max)):
 picture.show()
 ```
 
-![image-20231128165507455](./img/55-2.png)
+![](./img/55-2.png)

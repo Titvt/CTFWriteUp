@@ -55,7 +55,7 @@ if (($a != $b) && (md5($a) === md5($b)) && (sha1($a) === sha1($b))) {
 }
 ```
 
-![](./img/[极客大挑战 2020]Greatphp-1.png)
+![](./img/[极客大挑战2020]Greatphp-1.png)
 
 > 注:`$a`和`$b`构造时要在同一行，不然会错误
 
@@ -95,7 +95,7 @@ $a->lover = $c;
 echo urlencode(serialize($a));
 ```
 
-![](./img/[极客大挑战 2020]Greatphp-2.png)
+![](./img/[极客大挑战2020]Greatphp-2.png)
 
-![](./img/[极客大挑战 2020]Greatphp-3.png)
+![](./img/[极客大挑战2020]Greatphp-3.png)
 

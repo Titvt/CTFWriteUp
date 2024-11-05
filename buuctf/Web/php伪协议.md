@@ -44,13 +44,13 @@ expect:// — 处理交互式的流
 
 利用该方法，我们可以直接写入`php`文件，输入`file=php://input`，然后使用`burp`抓包，写入`php`代码
 
-![php伪协议 Image 1](./img/26-1.png)
+![](./img/26-1.png)
 
 ## 2.4.data://
 
 利用`data://`伪协议可以直接达到执行`php`代码的效果，例如执行`phpinfo()`函数：
 
-![php伪协议 Image 2](./img/26-2.png)
+![](./img/26-2.png)
 
 如果此处对特殊字符进行了过滤，我们还可以通过`base64`编码后再输入：
 
@@ -63,11 +63,11 @@ expect:// — 处理交互式的流
 
 以`DVWA`平台为例，我们将`phpinfo.php`文件进行压缩后上传
 
-![php伪协议 Image 3](./img/26-3.png)
+![](./img/26-3.png)
 
 通过zip://协议执行zip压缩包中的phpinfo.php文件：
 
-![php伪协议 Image 4](./img/26-4.png)
+![](./img/26-4.png)
 
 [参考链接之肖洋肖恩、](https://www.cnblogs.com/-mo-/p/11736445.html)
 

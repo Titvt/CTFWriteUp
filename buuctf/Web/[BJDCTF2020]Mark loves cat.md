@@ -10,7 +10,7 @@
 
 题目首页
 
-![](./img/[BJDCTF2020]Mark loves cat-1.png)
+![](./img/[BJDCTF2020]Marklovescat-1.png)
 
 仅在源码里面找到了`dog`，尝试传参`cat=dog`之类的失败，`robots.txt`和`www.zip`没有，在尝试`/.git/HEAD`时发现有文件
 

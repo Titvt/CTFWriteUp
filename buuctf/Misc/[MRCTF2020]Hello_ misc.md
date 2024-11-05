@@ -16,17 +16,17 @@
 
 `stegsolve`看看,在`red`通道发现有隐藏信息
 
-![image-20231129225447285](G:/CTFWriteUp/buuctf/Misc/img/67-1.png)
+![](./img/67-1.png)
 
 在`Red7`通道发现`png`文件
 
-![image-20231129225534304](G:/CTFWriteUp/buuctf/Misc/img/67-2.png)
+![](./img/67-2.png)
 
 发现`png`文件中给出了压缩包密码
 
-![image-20231129225622429](G:/CTFWriteUp/buuctf/Misc/img/67-3.png)
+![](./img/67-3.png)
 
-![image-20231129225728113](G:/CTFWriteUp/buuctf/Misc/img/67-4.png)
+![](./img/67-4.png)
 
 发现就是上一题的`TTL`隐写
 
@@ -50,7 +50,7 @@ with open('out.txt','r') as Dec:
 
 [参考](https://blog.csdn.net/mochu7777777/article/details/109680577)
 
-![image-20231129230138512](G:/CTFWriteUp/buuctf/Misc/img/67-5.png)
+![](./img/67-5.png)
 
 ```
 MTEwMTEwMTExMTExMTEwMDExMTEwMTExMTExMTExMTExMTExMTExMTExMTExMTExMTAxMTEwMDAwMDAxMTExMTExMTExMDAxMTAx
@@ -61,13 +61,13 @@ MTEwMTEwMTAxMTExMTExMDExMTEwMTExMTAxMDExMTAxMTExMTExMTEwMTEwMTEwMTAxMTAxMTExMTAw
 MTEwMTEwMTAwMDAxMTAwMDAwMTEwMDAwMDAxMTAwMDExMTAwMDAwMTEwMTEwMTEwMTAxMTEwMDAwMDAxMTExMDAwMDExMTExMTEx
 ```
 
-![image-20231129230859115](G:/CTFWriteUp/buuctf/Misc/img/67-6.png)
+![](./img/67-6.png)
 
 还以为是二进制转啥,其实是大文字
 
 把`1`全部替换为`空格`
 
-![image-20231129231017971](G:/CTFWriteUp/buuctf/Misc/img/67-7.png)
+![](./img/67-7.png)
 
 ```python
 import base64

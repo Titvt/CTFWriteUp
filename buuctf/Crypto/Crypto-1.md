@@ -183,7 +183,7 @@ http://code.mcdvisa.com/
 
 解压发现是猪圈密码
 
-![img](.\img\9-1.png)
+![](.\img\9-1.png)
 
 对应照片内容解密即可
 
@@ -447,7 +447,7 @@ for i in range(len(string1)):
 openssl rsa -pubin -text -modulus -in warmup -in pub.key
 ```
 
-![image-20231105194523662](./img/10-1.png)
+![](./img/10-1.png)
 
 其中的`Moudulus`即为`n`,`e`为`65537`，然后求解`p`和`q`
 
@@ -459,11 +459,11 @@ openssl rsa -pubin -text -modulus -in warmup -in pub.key
 
 　　3). 使用`python`模块（需安装， `pip3 install factordb-pycli`）
 
-![image-20231105202009165](.\img\10-3.png)
+![](.\img\10-3.png)
 
-![image-20231105202032670](./img/10-4.png)
+![](./img/10-4.png)
 
-![image-20231105201911498](.\img\10-2.png)
+![](.\img\10-2.png)
 
 ```bash
 openssl rsautl -decrypt -in flag.enc -inkey private.pem
@@ -490,11 +490,11 @@ with open("flag.enc", "rb+") as f:
 
 ```
 
-![image-20231105202258165](./img/10-5.png)
+![](./img/10-5.png)
 
 ## RSAROLL
 
-![image-20231105202608859](.\img\11-1.png)
+![](.\img\11-1.png)
 
 左边应该是`n`,右边是`e`
 
@@ -535,7 +535,7 @@ print(flag)
 
 我们重新看RSA的原理图
 
-![image-20231105221745648](.\img\12-1.png)
+![](.\img\12-1.png)
 
 我们看加密过程，现在N,e,c都有了，但是m是需要求的，分解N的方法是不可行的，但是有另一种方法
 
@@ -1450,7 +1450,7 @@ print(long_to_bytes(m))
 
 ## [NPUCTF2020]这是什么觅🐎
 
-![flag](G:\WriteUp\Buuctf\Crypto\img\17-1.png)
+![](.\img\17-1.png)
 
 1. 图片底部有
 

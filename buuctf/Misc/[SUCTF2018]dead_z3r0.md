@@ -8,13 +8,13 @@
 
 `trid`分析文件类型
 
-![image-20231207111840270](./img/132-1.png)
+![](./img/132-1.png)
 
 没看懂是啥
 
 再看看文件内容
 
-![image-20231207111911253](./img/132-2.png)
+![](./img/132-2.png)
 
 看起来很像`pyc`文件
 
@@ -94,10 +94,10 @@ print(plaintext)
 eTB1JTIwNHIzJTIwZjAwbDNkJTBBdGgxNSUyMDE1JTIwbjB0JTIwdGhhdCUyMHkwdSUyMHdhbnQlMEE5MCUyMDBuJTIwZHVkMyUwQWM0dGNoJTIwdGgzJTIwc3QzZzA1YXVydTU=
 ```
 
-![image-20231207141152993](./img/132-3.png)
+![](./img/132-3.png)
 
 被耍了
 
 `剑龙隐写`
 
-![image-20231207235120171](./img/132-4.png)
+![](./img/132-4.png)

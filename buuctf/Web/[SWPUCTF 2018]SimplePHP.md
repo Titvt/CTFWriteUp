@@ -8,7 +8,7 @@
 
 在页面有`上传文件`和`查看文件`的功能，查看文件时猜测有`php伪协议`，尝试读取源码时发现失败，直接给文件名就会直接读取源代码
 
-![](./img/[SWPUCTF 2018]SimplePHP-1.png)
+![](./img/[SWPUCTF2018]SimplePHP-1.png)
 
 首先上传的文件会经过这个规则修改文件名
 
@@ -169,7 +169,7 @@ $phar->stopBuffering();
 
 构造出来的`phar.phar`改名为`phar.gif`上传，最终使用`phar`伪协议利用
 
-![](./img/[SWPUCTF 2018]SimplePHP-2.png)
+![](./img/[SWPUCTF2018]SimplePHP-2.png)
 
 最后`base64`解码即可获取`flag`
 

@@ -6,6 +6,6 @@
 
 ## 解题
 
-![](G:/CTFWriteUp/buuctf/Misc/img/96-1.png)
+![](./img/96-1.png)
 
 https://products.aspose.app/imaging/zh-hans/image-view/apng

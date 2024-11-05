@@ -10,7 +10,7 @@
 
 `select * from 'admin' where password=md5($pass,true)`
 
-![img](./img/6-1.png)
+![](./img/6-1.png)
 
 这里说一下两个的联系，这里的`16`位秘文和`32`位秘文的第`8-24`位子字符串时一样的，也就是中间的`16`位。
 

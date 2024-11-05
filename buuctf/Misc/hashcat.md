@@ -20,10 +20,10 @@ john --wordlist=top6000.txt res.txt
 john --show res.txt
 ```
 
-![image-20231130235408815](./img/85-1.png?lastModify=1711207788)
+![](./img/85-1.png?lastModify=1711207788)
 
 后缀改为`pptx`
 
 在里面发现一个隐藏的文本框,设置字体为红色即可
 
-![image-20231130235719667](./img/85-2.png?lastModify=1711207788)
+![](./img/85-2.png?lastModify=1711207788)

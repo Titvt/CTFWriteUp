@@ -6,7 +6,7 @@
 
 ## 解题
 
-![EasySQL Image 1](./img/Easy-1.png)
+![](./img/Easy-1.png)
 
 在`用户名`处尝试万能密码
 

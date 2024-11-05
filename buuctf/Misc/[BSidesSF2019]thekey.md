@@ -6,4 +6,4 @@
 
 ## 解题
 
-![image-20231217213708998](/Users/gongtaiyun/security/CTFWriteUp/buuctf/Misc/img/136-1.png)
+![](./img/136-1.png)

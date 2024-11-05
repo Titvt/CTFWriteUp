@@ -8,7 +8,7 @@
 
 题目首页
 
-![抽奖1](./img/18-1.png)
+![](./img/18-1.png)
 
 源代码中发现`check.php`,看一下`check.php`
 
@@ -65,9 +65,9 @@ for i in range(len(str2)):
 print(res)
 ```
 
-![Alt text](./img/18-3.png)
+![](./img/18-3.png)
 
-![Alt text](./img/18-4.png)
+![](./img/18-4.png)
 
 发现`seed`值为`390951860`,根据之前的源码生成字符串并检验
 
@@ -85,5 +85,5 @@ $str_show = substr($str, 0, 20);
 echo "<p id='p1'>".$str_show."</p>";
 ```
 
-![Alt text](./img/18-5.png)
+![](./img/18-5.png)
 

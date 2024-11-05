@@ -8,15 +8,15 @@
 
 进入首页没发现什么东西
 
-![can you get shell?](./img/[SUCTF 2018]GetShell-1.png)
+![](./img/[SUCTF2018]GetShell-1.png)
 
 查看源码发现链接
 
-![](./img/[SUCTF 2018]GetShell-2.png)
+![](./img/[SUCTF2018]GetShell-2.png)
 
 进入页面后如图
 
-![](./img/[SUCTF 2018]GetShell-3.png)
+![](./img/[SUCTF2018]GetShell-3.png)
 
 意思就是内容从第`5`位开始解析，如果在黑名单则返回`illegal char`
 
@@ -44,7 +44,7 @@ if __name__ == '__main__':
 
 运行结果为
 
-![](./img/[SUCTF 2018]GetShell-4.png)
+![](./img/[SUCTF2018]GetShell-4.png)
 
 发现`$`、`(`,`)`、`.`、`;`、`=`、`[`、`]`、`_`、`~`可通过，汉字也可以
 
@@ -59,7 +59,7 @@ echo $a . "\n";
 echo $a[1];
 ```
 
-![](./img/[SUCTF 2018]GetShell-5.png)
+![](./img/[SUCTF2018]GetShell-5.png)
 
 可以利用这个原理，构造`assert($_POST[_])`
 
@@ -97,7 +97,7 @@ for ($i=0; $i < strlen($shell); $i++) {
 ?>
 ```
 
-![](./img/[SUCTF 2018]GetShell-6.png)
+![](./img/[SUCTF2018]GetShell-6.png)
 
 运行后获得取反结果，编写`webshell`,[取反绕过webshell脚本](./Scripts/reverse_chinese.php)
 
@@ -169,9 +169,9 @@ $___($_[_]);
 
 最后上传`webshell`，[上传webshell的python脚本](./Scripts/upload_reverse_chinese.py)
 
-![](./img/[SUCTF 2018]GetShell-7.png)
+![](./img/[SUCTF2018]GetShell-7.png)
 
-![](./img/[SUCTF 2018]GetShell-8.png)
+![](./img/[SUCTF2018]GetShell-8.png)
 
 因为`ls /`不能用，但`ls`可以，使用`cd /;ls`
 
@@ -181,8 +181,8 @@ _=system("cd /;ls;cat Th1s_14_f14g;")
 
 发现是假的`flag`，看看`env`
 
-![](./img/[SUCTF 2018]GetShell-9.png)
+![](./img/[SUCTF2018]GetShell-9.png)
 
 在`env`发现`flag`
 
-![](./img/[SUCTF 2018]GetShell-10.png)
+![](./img/[SUCTF2018]GetShell-10.png)

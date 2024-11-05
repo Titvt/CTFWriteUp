@@ -23,7 +23,7 @@ total 32K
 
 发现有换行和后面有数据
 
-![image-20231217180123952](./img/134-1.png)
+![](./img/134-1.png)
 
 应该是`morse`码,`20`看作`.`,`09`看作`-`
 
@@ -35,13 +35,13 @@ total 32K
 
 脚本爆破
 
-![image-20231217181536343](./img/134-2.png)
+![](./img/134-2.png)
 
 得到结果` CONGRATULATIONSONFINDINGMYSECRETNOWIWILLGIVEYOUTHEPASSWORDITISIAMTHEPASSWD`
 
 查看`maybehint.txt`
 
-![image-20231217181734453](./img/134-3.png)
+![](./img/134-3.png)
 
 `零宽度字符隐写`
 
@@ -61,7 +61,7 @@ do u know NTFS?
 
 用`NtfsStreamEditor2`打开,注意要用`7zip`解压,不然找不到隐藏文件
 
-![image-20231217202828459](./img/134-4.png)
+![](./img/134-4.png)
 
 一堆乱码且多次出现高频词,应该是词频分析
 
@@ -97,7 +97,7 @@ ZW5jcnlwdG8=
 
 密钥为`iamthepasswd`
 
-![image-20231217212227805](./img/134-5.png)
+![](./img/134-5.png)
 
 删除后重新输入即可
 

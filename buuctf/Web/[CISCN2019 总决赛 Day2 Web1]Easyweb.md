@@ -193,6 +193,6 @@ if __name__ == "__main__":
 
 登陆后上传文件,因为`php`过滤,用短标签绕过`<?php`变为`<?=`,文件名也为`段标签写好的shell`
 
-![](./img/[CISCN2019 总决赛 Day2 Web1]Easyweb.png)
+![](./img/[CISCN2019总决赛Day2Web1]Easyweb.png)
 
-![](./img/[CISCN2019 总决赛 Day2 Web1]Easyweb-2.png)
+![](./img/[CISCN2019总决赛Day2Web1]Easyweb-2.png)

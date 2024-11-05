@@ -193,8 +193,8 @@ def challenge():
 
 `bp`传值，首先生成`sign`
 
-![](./img/[De1CTF 2019]SSRF Me-1.png)
+![](./img/[De1CTF2019]SSRFMe-1.png)
 
 最后传值获得`flag`
 
-![](./img/[De1CTF 2019]SSRF Me-2.png)
+![](./img/[De1CTF2019]SSRFMe-2.png)

@@ -45,9 +45,9 @@ for ($i=0; $i < 128 ; $i++) {
 
 取反和异或没被过滤，测试一下`phpinfo()`
 
-![](./img/[ISITDTU 2019]EasyPHP-1.png)
+![](./img/[ISITDTU2019]EasyPHP-1.png)
 
-![](./img/[ISITDTU 2019]EasyPHP-2.png)
+![](./img/[ISITDTU2019]EasyPHP-2.png)
 
 命令执行的函数都被禁用了,同时也限制了`open_basedir`在`/var/www/html`，使用`无参数rce`的`payload`
 

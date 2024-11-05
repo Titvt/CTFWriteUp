@@ -12,4 +12,4 @@ https://www.calormen.com/jslogo/
 
 在线运行即可
 
-![image-20231128223516698](./img/63-1.png)
+![](./img/63-1.png)

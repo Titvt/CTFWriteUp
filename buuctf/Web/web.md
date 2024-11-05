@@ -38,17 +38,17 @@
 
 注入发现为`单引号注入`
 
-![image-20231109223058542](.\img\4-2.png)
+![](.\img\4-2.png)
 
 查看列
 
-![image-20231109223131382](.\img\4-4.png)
+![](.\img\4-4.png)
 
 发现为`2`列
 
 联合注入查一下信息
 
-![image-20231109223245571](./img/4-7.png)
+![](./img/4-7.png)
 
 发现过滤了`select`
 
@@ -134,7 +134,7 @@
 
 而这里的就是在`select后面`的 ，试一下查询`1,2,3,4,5`
 
-![image-20231109232431928](./img/4-9.png)
+![](./img/4-9.png)
 
 猜想正确，注意到原本查询唯独末尾的`5`变为了`1`，猜测是用到了`管道符`（`|` `||`之类的），导致`5`回显失败，这里先试试看查询
 
@@ -524,7 +524,7 @@ password=404a&money=1e9
 
 `select * from 'admin' where password=md5($pass,true)`
 
-![img](./img/6-1.png)
+![](./img/6-1.png)
 
 这里说一下两个的联系，这里的`16`位秘文和`32`位秘文的第`8-24`位子字符串时一样的，也就是中间的`16`位。
 
@@ -1025,7 +1025,7 @@ echo serialize($a);
 ?>  
 ```
 
-![image-20231110224045679](./img/7-1.png)
+![](./img/7-1.png)
 
 发现读取成功
 
@@ -1118,11 +1118,11 @@ GIF89a
 
 首先可以看到该表只有一个用户
 
-![img](.\img\8-1.png)
+![](.\img\8-1.png)
 
  然后我们可以用联合查询的方式将查询的数据插入到表中
 
-![img](.\img\8-2.png)
+![](.\img\8-2.png)
 
 这题的知识点是绕过密码的`md5`验证
 
@@ -1350,9 +1350,9 @@ O:8:"UserInfo":3:{s:4:"name";s:5:"admin";s:3:"age";i:19;s:4:"blog";s:29:"file://
 
 需要用`POST`方法
 
-![image-20231112224219961](.\img\9-1.png)
+![](.\img\9-1.png)
 
-![image-20231112224529720](.\img\9-2.png)
+![](.\img\9-2.png)
 
 [参考](https://www.cnblogs.com/darkcyan/p/17668377.html)
 
@@ -1424,7 +1424,7 @@ $a = new Test();
 echo serialize($a);
 ```
 
-![image-20231112230555837](.\img\10-1.png)
+![](.\img\10-1.png)
 
 ```php
 <?php
@@ -1444,7 +1444,7 @@ echo serialize($a);
 
 `O:4:"Test":2:{s:1:"p";s:20:"find / -name 'flag*'";s:4:"func";s:6:"system";}`
 
-![image-20231112230852512](.\img\10-2.png)
+![](.\img\10-2.png)
 
 ```php
 `<?php
@@ -1664,7 +1664,7 @@ highlight_file(next(array_reverse(scandir(current(localeconv())))));
 
 发现`phpmyadmin`的版本为`4.8.1`
 
-![image-20231113103000681](.\img\11-1.png)
+![](.\img\11-1.png)
 
 搜索一下有没有历史漏洞
 
@@ -1877,7 +1877,7 @@ java:jade velocity jsp
 
 题目首页
 
-![image-20231113113536861](./img/12-2.png)
+![](./img/12-2.png)
 
 源码中会显示图片的`base64`内容
 
@@ -1887,11 +1887,11 @@ java:jade velocity jsp
 
 尝试将内容改为`index.php`并反过来加密
 
-![image-20231113113520100](./img/12-1.png)
+![](./img/12-1.png)
 
-![image-20231113113858671](./img/12-3.png)
+![](./img/12-3.png)
 
-![image-20231113113918001](./img/12-4.png)
+![](./img/12-4.png)
 
 将响应包中的内容`base64`解码后为
 
@@ -1949,9 +1949,9 @@ a=%4d%c9%68%ff%0e%e3%5c%20%95%72%d4%77%7b%72%15%87%d3%6f%a7%b2%1b%dc%56%b7%4a%3d
 
 `ls`可以用`l\s`绕过,`cat`同理`ca\t`
 
-![image-20231113114641215](./img/12-5.png)
+![](./img/12-5.png)
 
-![image-20231113114809799](./img/12-6.png)
+![](./img/12-6.png)
 
 ## [MRCTF2020]Ezpop
 
@@ -2144,9 +2144,9 @@ for i in files:                                                            #加�
    t.start()
 ```
 
-![image-20231113175907317](./img/13-1.png)
+![](./img/13-1.png)
 
-![image-20231113175929569](./img/13-2.png)
+![](./img/13-2.png)
 
 ## [安洵杯 2019]easy_serialize_php
 
@@ -2203,7 +2203,7 @@ if($function == 'highlight_file'){
 
 在`phpinfo`中找到了，`auto_append_file`说明自动在文件中执行该文件代码，说明要读取这个文件
 
-![image-20231113180630471](./img/13-3.png)
+![](./img/13-3.png)
 
  `extract($_POST)`就是将`post`的内容作为这个函数的参数。
 
@@ -2226,7 +2226,7 @@ echo(serialize($_SESSION));
 
 生成序列化后的字符串，取需要逃逸的部分，这里取的部分为红框里的部分
 
-![](./img/[安洵杯 2019]easy_serialize_php-1.png)
+![](./img/[安洵杯2019]easy_serialize_php-1.png)
 
 在红框部分前面`随意加一个字符`，我这里加了`C`
 
@@ -2240,7 +2240,7 @@ echo(serialize($_SESSION));
 
 然后看之前红框部分前面这里到添加的`C`字符这部分的长度来决定填充字符
 
-![](./img/[安洵杯 2019]easy_serialize_php-2.png)
+![](./img/[安洵杯2019]easy_serialize_php-2.png)
 
 这里需要逃逸`24`个字符，一个`flag`能逃逸`4`个，所以需要`6`个`flag`
 
@@ -2248,13 +2248,13 @@ echo(serialize($_SESSION));
 _SESSION[user]=flagflagflagflagflagflag&_SESSION[function]=C";s:8:"function";s:10:"show_image";s:3:"img";s:20:"ZDBnM19mMWFnLnBocA==";}
 ```
 
-![](./img/[安洵杯 2019]easy_serialize_php-3.png)
+![](./img/[安洵杯2019]easy_serialize_php-3.png)
 
 因为`/d0g3_fllllllag`转为`base64`之后长度也是`20`，和`d0g3_f1ag.php`长度相同
 
 所以直接改`img`部分反序列化的值即可，`L2QwZzNfZmxsbGxsbGFn`
 
-![](./img/[安洵杯 2019]easy_serialize_php-4.png)
+![](./img/[安洵杯2019]easy_serialize_php-4.png)
 
 [本人博客](https://cmacckk.github.io/2021/06/05/phpUnserialize/#php%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E5%AD%97%E7%AC%A6%E4%B8%B2%E9%80%83%E9%80%B8%E5%8F%98%E7%9F%AD)
 
@@ -2355,7 +2355,7 @@ payload:
 
 正常情况下`id=1`
 
-![image-20231229115035475](./img/14-1.png)
+![](./img/14-1.png)
 
 因为`1^0`为`1`
 
@@ -2802,13 +2802,13 @@ for i, v in enumerate(r):
 ?search={{[].__class__.__base__.__subclasses__()[59].__init__['__glo'+'bals__']}}
 ```
 
-![init globals result](./img/15-2.png)
+![](./img/15-2.png)
 
 ```url
 ?search={{[].__class__.__base__.__subclasses__()[59].__init__['__glo'+'bals__']['__builtins__']}}
 ```
 
-![init builtins result](./img/15-3.png)
+![](./img/15-3.png)
 
 ```url
 ?search={{[].__class__.__base__.__subclasses__()[59].__init__['__glo'+'bals__']['__builtins__']['eval']}}
@@ -3006,11 +3006,11 @@ print(urllib.quote(s))
 
 `ccommands%0Agetoutput%0Ap0%0A%28S%27cat%20/flag.txt%27%0Ap1%0Atp2%0ARp3%0A.`
 
-![pickle](./img/16-13.png)
+![](./img/16-13.png)
 
 放到`burpsuite`的`become`参数即可
 
-![pickle](./img/16-14.png)
+![](./img/16-14.png)
 
 # [WUSTCTF2020]CV Maker
 

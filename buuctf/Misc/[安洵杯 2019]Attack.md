@@ -12,11 +12,11 @@
 
 发现一个压缩包
 
-![image-20231128173305505](./img/58-1.png)
+![](./img/58-1.png)
 
 重新分析流量包，搜索查看常用协议，发现在http协议中存在lsass.dmp
 
-![image-20231128203342676](./img/58-2.png)
+![](./img/58-2.png)
 
 （`*.dmp`文件是`windows`系统中的错误转储文件，当`Windows`发生错误蓝屏的时候，系统将当前内存【含虚拟内存】中的数据直接写到文件中去，方便定位故障原因。）
 
@@ -36,4 +36,4 @@ sekurlsa::minidump lsass.dmp
 sekurlsa::logonpasswords full
 ```
 
-![image-20231128204009002](./img/58-3.png)
+![](./img/58-3.png)

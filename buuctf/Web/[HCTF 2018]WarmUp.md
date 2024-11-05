@@ -6,7 +6,7 @@
 
 ## 2. 解题
 
-![WarmUp Index Image](./img/WarmUp-1.png)
+![](./img/WarmUp-1.png)
 
 没有发现有用的信息，`ctrl+u`查看源代码
 

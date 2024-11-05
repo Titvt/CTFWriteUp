@@ -10,15 +10,15 @@
 
 进入题目首页，给了一个登录框
 
-![](./img/[N1CTF 2018]eating_cms-1.png)
+![](./img/[N1CTF2018]eating_cms-1.png)
 
 也没发现备份文件，猜测可以注册，看看`register.php`
 
-![](./img/[N1CTF 2018]eating_cms-2.png)
+![](./img/[N1CTF2018]eating_cms-2.png)
 
 尝试注册`admin'`试试有没有二次注入，登录后进入主页`url`为`http://xxx/user.php?page=guest`，看起来似乎有文件包含，使用`/user.php?page=php://filter/convert.base64-encode/resource=index`时成功获取了`index.php`的源代码
 
-![](./img/[N1CTF 2018]eating_cms-3.png)
+![](./img/[N1CTF2018]eating_cms-3.png)
 
 根据各种`php`引用找到最终可以利用的代码为`function.php`
 
@@ -56,7 +56,7 @@ function filter_directory()
 
 通过末尾添加`//`绕过`parse_url`和`parse_str`，然后尝试包含`ffffllllaaaaggg`
 
-![](./img/[N1CTF 2018]eating_cms-4.png)
+![](./img/[N1CTF2018]eating_cms-4.png)
 
 ```php
 <?php
@@ -82,7 +82,7 @@ include "templates/upload.html";
 
 访问`templates/upload.html`发现需要传文件，传文件时发现时通过`/templates/upllloadddd.php`传的文件
 
-![](./img/[N1CTF 2018]eating_cms-6.png)
+![](./img/[N1CTF2018]eating_cms-6.png)
 
 读取一下``/templates/upllloadddd.php`,发现没有什么，直接读取`upllloadddd.php`获取到源代码为
 
@@ -117,8 +117,8 @@ if(!in_array($ext,$allowtype)){
 
 发现直接在`filename`处截断即可执行命令
 
-![](./img/[N1CTF 2018]eating_cms-8.png)
+![](./img/[N1CTF2018]eating_cms-8.png)
 
-![](./img/[N1CTF 2018]eating_cms-9.png)
+![](./img/[N1CTF2018]eating_cms-9.png)
 
-![](./img/[N1CTF 2018]eating_cms-10.png)
+![](./img/[N1CTF2018]eating_cms-10.png)

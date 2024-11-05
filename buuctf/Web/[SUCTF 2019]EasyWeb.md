@@ -87,7 +87,7 @@ print('${%s^%s}' % (istr, jstr))
 ?_=${%80%80%80%80^%df%c7%c5%d4}{%80}();&%80=phpinfo
 ```
 
-![](./img/[SUCTF 2019]EasyWeb-1.png)
+![](./img/[SUCTF2019]EasyWeb-1.png)
 
 接下来就可以考虑`get_the_flag`函数的内容了，该函数主要是写入文件，但是有限制，既文件名不能包含`ph`文件内容也不能包含`<?`，这里可以采用`.htaccess`（`phpinfo`页面可以看出这是`apache`服务器），通过其`php_value auto_append_file`指定文件被`PHP`包含，通过`AddType application/x-httpd-php`指定文件被解析，此外这条配置是兼容`php`伪协议的，所以我们可以采用`php://filter`伪协议进行`base64`编码处理，这样就能绕过对`<?`的检测了。
 
@@ -157,11 +157,11 @@ res_jpg = session.post(url, files=files_shell)
 print(res_jpg.text)
 ```
 
-![](./img/[SUCTF 2019]EasyWeb-2.png)
+![](./img/[SUCTF2019]EasyWeb-2.png)
 
 `wp`说是要绕过`disable_functions`，但是`antsword`直接连接就能读取到`flag`
 
-![](./img/[SUCTF 2019]EasyWeb-3.png)
+![](./img/[SUCTF2019]EasyWeb-3.png)
 
 [参考文章1](https://www.cnblogs.com/Article-kelp/p/16097100.html)
 

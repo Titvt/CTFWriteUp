@@ -12,7 +12,7 @@
 
 `010editor`查看一下
 
-![image-20231125164007319](G:/CTFWriteUp/buuctf/Misc/img/16-2.png)
+![](./img/16-2.png)
 
 发现有文件拼接
 
@@ -22,11 +22,11 @@
 
 压缩包有加密,先看看是不是`伪加密`
 
-![image-20231125164629347](G:/CTFWriteUp/buuctf/Misc/img/16-3.png)
+![](./img/16-3.png)
 
 确实是`伪加密`
 
-![image-20231125165050463](G:/CTFWriteUp/buuctf/Misc/img/16-4.png)
+![](./img/16-4.png)
 
 `7-zip`解压`vmdk`文件
 

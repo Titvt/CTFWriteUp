@@ -28,4 +28,4 @@ flag
 
 注册处注入，登录处执行，最终获取`flag`
 
-![](./img/October 2019 Twice SQL Injection-1.png)
+![](./img/October2019TwiceSQLInjection-1.png)

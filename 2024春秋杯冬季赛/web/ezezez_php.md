@@ -260,7 +260,7 @@ $a -> start1 -> cl -> Flag = base64_encode("dict://127.0.0.1/info");
 
 发现可以获取到`redis`信息
 
-![ezezez_php-1](./img/ezezez_php-1.png)
+![](./img/ezezez_php-1.png)
 
 这里使用`redis主从复制`进行攻击，因为机器不出网，所以重新开一台靶机,使用[redis-rogue-server](https://github.com/n0b0dyCN/redis-rogue-server)
 
@@ -274,7 +274,7 @@ $a -> start1 -> cl -> Flag = base64_encode("dict://127.0.0.1/info");
 python3 redis-rogue-server.py --server-only
 ```
 
-![ezezez_php-2](./img/ezezez_php-2.png)
+![](./img/ezezez_php-2.png)
 
 对每一个手动操作的命令都去生成再手动请求过于麻烦，所以使用`php`直接进行`post`请求并返回命令执行结果即可
 
@@ -379,4 +379,4 @@ foreach ($payloadArray as $value) {
 
 最终运行效果
 
-![ezezez_php-3](./img/ezezez_php-3.png)
+![](./img/ezezez_php-3.png)

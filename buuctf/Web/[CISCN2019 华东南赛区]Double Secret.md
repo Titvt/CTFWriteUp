@@ -10,19 +10,19 @@
 
 首先题目提示
 
-![](./img/[CISCN2019 华东南赛区]Double Secret-1.png)
+![](./img/[CISCN2019华东南赛区]DoubleSecret-1.png)
 
 然后找到`robots.txt`，也没发现什么信息
 
-![](./img/[CISCN2019 华东南赛区]Double Secret-2.png)
+![](./img/[CISCN2019华东南赛区]DoubleSecret-2.png)
 
 然后再`/secret`发现了
 
-![](./img/[CISCN2019 华东南赛区]Double Secret-3.png)
+![](./img/[CISCN2019华东南赛区]DoubleSecret-3.png)
 
 尝试传入参数报错看源码
 
-![](./img/[CISCN2019 华东南赛区]Double Secret-4.png)
+![](./img/[CISCN2019华东南赛区]DoubleSecret-4.png)
 
 发现有`SSTI`，需要我们`payload`进行`RC4`加密，密钥为`HereIsTreasure`
 
@@ -74,9 +74,9 @@ print("rc4加密后的url编码:"+enc_url)
 #print("rc4加密后的base64编码"+enc_base64)
 ```
 
-![](./img/[CISCN2019 华东南赛区]Double Secret-5.png)
+![](./img/[CISCN2019华东南赛区]DoubleSecret-5.png)
 
-![](./img/[CISCN2019 华东南赛区]Double Secret-6.png)
+![](./img/[CISCN2019华东南赛区]DoubleSecret-6.png)
 
-![](./img/[CISCN2019 华东南赛区]Double Secret-7.png)
+![](./img/[CISCN2019华东南赛区]DoubleSecret-7.png)
 

@@ -18,4 +18,4 @@ xl/charts/flag.txt
 
 直接`foremost`分离后即可获取到`flag`
 
-![image-20231125173503920](file:///G:/CTFWriteUp/buuctf/Misc/img/19-1.png?lastModify=1711202731)
+![](./img/19-1.png?lastModify=1711202731)

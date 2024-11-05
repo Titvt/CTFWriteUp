@@ -8,17 +8,17 @@
 
 题目首页如图
 
-![](./img/[安洵杯 2019]easy_web-1.png)
+![](./img/[安洵杯2019]easy_web-1.png)
 
 在`url`和源码中看到了`base64`编码的内容，先对`url`中的`img`参数解码，发现为文件名，文件内容在源码中`base64`加密
 
-![](./img/[安洵杯 2019]easy_web-2.png)
+![](./img/[安洵杯2019]easy_web-2.png)
 
 那么将`index.php`同样编码后就会对应给出`index.php`源码`base64`编码后的内容
 
-![](./img/[安洵杯 2019]easy_web-3.png)
+![](./img/[安洵杯2019]easy_web-3.png)
 
-![](./img/[安洵杯 2019]easy_web-4.png)
+![](./img/[安洵杯2019]easy_web-4.png)
 
 解密后的内容为
 
@@ -80,7 +80,7 @@ a=%4d%c9%68%ff%0e%e3%5c%20%95%72%d4%77%7b%72%15%87%d3%6f%a7%b2%1b%dc%56%b7%4a%3d
 
 `ls`可以用`l\s`绕过,`cat`同理`ca\t`
 
-![](./img/[安洵杯 2019]easy_web-5.png)
+![](./img/[安洵杯2019]easy_web-5.png)
 
-![](./img/[安洵杯 2019]easy_web-6.png)
+![](./img/[安洵杯2019]easy_web-6.png)
 

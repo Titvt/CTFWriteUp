@@ -12,11 +12,11 @@
 
 在文件尾发现冗余的数据
 
-![image-20231206115151752](./img/115-3.png)
+![](./img/115-3.png)
 
 使用`trid`工具分析下
 
-![image-20231206120111724](./img/115-4.png)
+![](./img/115-4.png)
 
 是Python `Pickle`序列号数据
 
@@ -124,4 +124,4 @@ for line, data in enumerate(flag):
     temp = [' '] * 76
 ```
 
-![在这里插入图片描述](./img/115-5.png)
+![](./img/115-5.png)

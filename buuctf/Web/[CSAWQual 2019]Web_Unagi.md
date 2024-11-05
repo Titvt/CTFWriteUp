@@ -8,17 +8,17 @@
 
 ## 解题
 
-![](./img/[CSAWQual 2019]Web_Unagi-1.png)
+![](./img/[CSAWQual2019]Web_Unagi-1.png)
 
 `About`提示`flag`在`/flag`文件，进入`Upload`发现可以上传文件，给了个上传文件的示例
 
-![](./img/[CSAWQual 2019]Web_Unagi-2.png)
+![](./img/[CSAWQual2019]Web_Unagi-2.png)
 
-![](./img/[CSAWQual 2019]Web_Unagi-3.png)
+![](./img/[CSAWQual2019]Web_Unagi-3.png)
 
 先尝试上传正常文件看一下回显
 
-![](./img/[CSAWQual 2019]Web_Unagi-4.png)
+![](./img/[CSAWQual2019]Web_Unagi-4.png)
 
 除了`username`和`password`列都会显示，尝试利用`xxe`
 
@@ -44,7 +44,7 @@
 </users>
 ```
 
-![](./img/[CSAWQual 2019]Web_Unagi-5.png)
+![](./img/[CSAWQual2019]Web_Unagi-5.png)
 
 被`WAF`拦下来了，可以通过`编码`绕过`WAF`，[参考文章配枪朱丽叶](https://www.shawroot.cc/156.html)
 
@@ -86,7 +86,7 @@ iconv 1.xml -f UTF-8 -t UTF-16BE -o 2.xml
 
 然后上传`2.xml`，发现可以正常绕过，但是`flag`显示不全
 
-![](./img/[CSAWQual 2019]Web_Unagi-6.png)
+![](./img/[CSAWQual2019]Web_Unagi-6.png)
 
 加个`intro`元素即可
 
@@ -113,4 +113,4 @@ iconv 1.xml -f UTF-8 -t UTF-16BE -o 2.xml
 </users>
 ```
 
-![](./img/[CSAWQual 2019]Web_Unagi-7.png)
+![](./img/[CSAWQual2019]Web_Unagi-7.png)

@@ -8,7 +8,7 @@
 
 `wwjkwywq`
 
-![image-20231218171513781](./img/139-1.png)
+![](./img/139-1.png)
 
 ```python
 # _*_ coding:utf-8 _*_

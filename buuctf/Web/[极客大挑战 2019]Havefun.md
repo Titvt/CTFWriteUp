@@ -7,11 +7,11 @@
 
 ## 解题
 
-![Havefun index page image](./img/Havefun-1.png)
+![](./img/Havefun-1.png)
 
 没找到什么东西，查看一下源代码
 
-![Havefun source code image](./img/Havefun-2.png)
+![](./img/Havefun-2.png)
 
 查看到一串`php`代码
 
@@ -26,6 +26,6 @@
 
 传参`cat=dog`
 
-![Havefun flag image](./img/Havefun-3.png)
+![](./img/Havefun-3.png)
 
 直接拿到`flag`

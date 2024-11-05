@@ -40,11 +40,11 @@ select * from user where username = '$name'
 
 首先可以看到该表只有一个用户
 
-![img](.\img\8-1.png)
+![](.\img\8-1.png)
 
  然后我们可以用联合查询的方式将查询的数据插入到表中
 
-![img](.\img\8-2.png)
+![](.\img\8-2.png)
 
 这题的知识点是绕过密码的`md5`验证
 

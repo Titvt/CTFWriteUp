@@ -12,7 +12,7 @@
 tshark -r .\attachment.pcap -T fields -e ip.id > data.txt
 ```
 
-![ ](./img/135-1.png)
+![](./img/135-1.png)
 
 `16`进制解密
 

@@ -34,4 +34,4 @@ $hh = hash_hmac('sha256', $_POST['One-ear'], false);
 echo $hh;
 ```
 
-![](./img/[羊城杯 2020]Blackcat-1.png)
+![](./img/[羊城杯2020]Blackcat-1.png)

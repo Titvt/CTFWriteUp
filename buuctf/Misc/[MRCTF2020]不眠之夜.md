@@ -34,7 +34,7 @@ montage *.jpg -tile 10x12 -resize 4000x2400 -geometry +0+0 out.jpg #把图片碎
 gaps --image=out.jpg --generations=90 --population=120 --size=200 #还原原图片
 ```
 
-![image-20231130225627726](./img/82-1.png)
+![](./img/82-1.png)
 
 `*.jpg`指目标为目录下所有的`jpg`格式图片
 
@@ -50,4 +50,4 @@ gaps --image=out.jpg --generations=90 --population=120 --size=200 #还原原图�
 
 于是有，拼图的宽度，也就是`size`为`600/12=50`
 
-![res](./img/82-2.png)
+![](./img/82-2.png)

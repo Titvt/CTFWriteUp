@@ -6,7 +6,7 @@
 
 ## 解题
 
-![image-20231205210836998](./img/102-1.png)
+![](./img/102-1.png)
 
 图片左上角存在类似二维码的图片
 
@@ -23,4 +23,4 @@
 
 https://www.qqxiuzi.cn/bianma/erjinzhi.php
 
-![image-20231205210956886](./img/102-2.png)
+![](./img/102-2.png)

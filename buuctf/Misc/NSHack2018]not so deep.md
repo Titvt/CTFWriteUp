@@ -10,7 +10,7 @@
 
 ## 解题
 
-![image-20231206161006741](./img/125-1.png)
+![](./img/125-1.png)
 
 `audacity`打开得到一半`flag`
 
@@ -161,14 +161,14 @@ if __name__ == '__main__':
     '''.rstrip()), file=sys.stderr)
 ```
 
-![image-20231206161820008](./img/125-2.png)
+![](./img/125-2.png)
 
 打开`DeepSound`输入密码
 
-![image-20231206161916840](./img/125-3.png)
+![](./img/125-3.png)
 
-![image-20231206161947866](./img/125-4.png)
+![](./img/125-4.png)
 
-![image-20231206162036518](./img/125-5.png)
+![](./img/125-5.png)
 
 `INSA{Aud1o_st3G4n0_1s_4lwayS_Th3_S4me}`

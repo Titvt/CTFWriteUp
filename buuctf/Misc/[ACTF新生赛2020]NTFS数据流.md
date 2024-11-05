@@ -10,4 +10,4 @@
 
 `NtfsStreamsEditor`扫描即可
 
-![image-20231126175115508](./img/42-1.png)
+![](./img/42-1.png)

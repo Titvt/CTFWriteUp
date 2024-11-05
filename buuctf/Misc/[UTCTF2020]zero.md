@@ -12,14 +12,14 @@
 
 用`cat`打开,发现很多不可见字符
 
-![image-20231129231602064](G:/CTFWriteUp/buuctf/Misc/img/68-1.png)
+![](./img/68-1.png)
 
 用`vim`打开
 
-![image-20231129231628969](G:/CTFWriteUp/buuctf/Misc/img/68-2.png)
+![](./img/68-2.png)
 
 零宽度字符隐写：https://330k.github.io/misc_tools/unicode_steganography.html
 
-![image-20231129231724473](G:/CTFWriteUp/buuctf/Misc/img/68-3.png)
+![](./img/68-3.png)
 
 [参考文章](https://blog.csdn.net/mochu7777777/article/details/109817723)

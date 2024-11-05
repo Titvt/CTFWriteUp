@@ -14,4 +14,4 @@
 
 在最后发现`flag`
 
-![image-20231125213636841](file:///G:/CTFWriteUp/buuctf/Misc/img/22-1.png?lastModify=1711202731)
+![](./img/22-1.png?lastModify=1711202731)

@@ -20,22 +20,22 @@ total 11M
 
 先看看第一个文件
 
-![image-20231130105832762](./img/73-1.png)
+![](./img/73-1.png)
 
 似乎是`base64`,解码看看
 
-![image-20231130111631531](./img/73-2.png)
+![](./img/73-2.png)
 
 发现`salted`,应该是`AES`或`3DES`
 
 找密钥,`binwalk`看看照片
 
-![image-20231130111834449](./img/73-3.png)
+![](./img/73-3.png)
 
 发现`AES`密钥
 
-![image-20231130112245185](./img/73-4.png)
+![](./img/73-4.png)
 
 使用`SilentEye`[Decode](https://so.csdn.net/so/search?q=Decode&spm=1001.2101.3001.7020)`Ending.wav`
 
-![image-20231130112427165](./img/73-5.png)
+![](./img/73-5.png)

@@ -10,19 +10,19 @@
 
 ## 解题
 
-![](./img/[SCTF2019]Flag Shop-1.png)
+![](./img/[SCTF2019]FlagShop-1.png)
 
 `work`可以获得钱，但是太少，看了`cookie`，发现是`jwt`，解密一下
 
-![](./img/[SCTF2019]Flag Shop-2.png)
+![](./img/[SCTF2019]FlagShop-2.png)
 
-![](./img/[SCTF2019]Flag Shop-3.png)
+![](./img/[SCTF2019]FlagShop-3.png)
 
 发现有`jkl`代表钱，但是需要破解`secret`，用了`c-jwt-crack`和`字典破解`发现都没有找到，说明应该不是直接破解，找找其他的地方
 
 在`robots.txt`找到了个路径`/filebak`,进入路径后发现`ruby`代码
 
-![](./img/[SCTF2019]Flag Shop-4.png)
+![](./img/[SCTF2019]FlagShop-4.png)
 
 ```ruby
 require 'sinatra'
@@ -158,24 +158,24 @@ end
 work?SECRET=&name=%3C%25%3D%24'%25%3E&do=%3C%25%3D%24'%25%3E%20is%20working
 ```
 
-![](./img/[SCTF2019]Flag Shop-5.png)
+![](./img/[SCTF2019]FlagShop-5.png)
 
 用获取到的这个`secret`加密
 
-![](./img/[SCTF2019]Flag Shop-6.png)
+![](./img/[SCTF2019]FlagShop-6.png)
 
 将这个`secret`用来加密，修改金额
 
-![](./img/[SCTF2019]Flag Shop-7.png)
+![](./img/[SCTF2019]FlagShop-7.png)
 
 然后就可以进行购买
 
-![](./img/[SCTF2019]Flag Shop-8.png)
+![](./img/[SCTF2019]FlagShop-8.png)
 
-![](./img/[SCTF2019]Flag Shop-9.png)
+![](./img/[SCTF2019]FlagShop-9.png)
 
 最后用`jwt`解密
 
-![](./img/[SCTF2019]Flag Shop-10.png)
+![](./img/[SCTF2019]FlagShop-10.png)
 
 [参考文章](https://syunaht.com/p/1841453998.html)
