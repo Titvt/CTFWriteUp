@@ -10,11 +10,11 @@
 
 首先注册账号后登录进来发现是个网盘，然后尝试上传文件，要求为`jpg`或者`png`,简单上传一个文件后可以`下载`和`删除`，下载的时候在`POST`时修改`filename`参数可以实现`任意文件下载`
 
-![alt text](<img/[CISCN2019 华北赛区 Day1 Web1]Dropbox-1.png>)
+![](img/[CISCN2019华北赛区Day1Web1]Dropbox-1.png)
 
 但是无法读取`flag`，尝试读取源码看看，因为都有相互包含，我把所有已知的`php`文件都分别下载了下来，可以用`相对路径`，如`../../download.php`或者`绝对路径`,如`/var/www/html/download.php`，目录如图所示
 
-![alt text](<img/[CISCN2019 华北赛区 Day1 Web1]Dropbox-2.png>)
+![](img/[CISCN2019华北赛区Day1Web1]Dropbox-2.png)
 
 这里我就不把全部代码列出来了，只把关键点列出来
 
@@ -114,8 +114,8 @@ $phar->addFromString("exp.txt", "a");       // 添加要压缩的文件
 $phar->stopBuffering();
 ```
 
-![alt text](<img/[CISCN2019 华北赛区 Day1 Web1]Dropbox-3.png>)
+![](img/[CISCN2019华北赛区Day1Web1]Dropbox-3.png)
 
 将`phar.phar`改名为`phar.jpg`，最后使用`phar://`伪协议加载即可，如下图所示
 
-![alt text](<img/[CISCN2019 华北赛区 Day1 Web1]Dropbox-4.png>)
+![](img/[CISCN2019华北赛区Day1Web1]Dropbox-4.png)

@@ -102,11 +102,11 @@ echo serialize($profile);
 
 可以参考[我以前的博客](https://cmacckk.github.io/2021/06/05/phpUnserialize/#php%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E5%AD%97%E7%AC%A6%E4%B8%B2%E9%80%83%E9%80%B8%E5%8F%98%E9%95%BF)
 
-![alt text](<img/[0CTF 2016]piapiapia-3.png>)
+![](img/[0CTF2016]piapiapia-3.png)
 
 可以看到，需要逃逸的字符串长度是`34`,从`where`变到`hacker`每次增加一个字符，所以需要`34`个`where`来拼接
 
-![alt text](<img/[0CTF 2016]piapiapia-4.png>)
+![](img/[0CTF2016]piapiapia-4.png)
 
 ```
 wherewherewherewherewherewherewherewherewherewherewherewherewherewherewherewherewherewherewherewherewherewherewherewherewherewherewherewherewherewherewherewherewherewhere";}s:5:"photo";s:10:"config.php";}
@@ -114,10 +114,10 @@ wherewherewherewherewherewherewherewherewherewherewherewherewherewherewherewhere
 
 然后`bp`传值之后到`index.php`的源码中找到`base64`值解码即可获得`config.php`文件的内容
 
-![alt text](<img/[0CTF 2016]piapiapia-5.png>)
+![](img/[0CTF2016]piapiapia-5.png)
 
-![alt text](<img/[0CTF 2016]piapiapia-6.png>)
+![](img/[0CTF2016]piapiapia-6.png)
 
-![alt text](<img/[0CTF 2016]piapiapia-7.png>)
+![](img/[0CTF2016]piapiapia-7.png)
 
-![alt text](<img/[0CTF 2016]piapiapia-8.png>)
+![](img/[0CTF2016]piapiapia-8.png)

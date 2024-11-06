@@ -16,7 +16,7 @@
 
 先访问`WEB-INF/web.xml`
 
-![Easy Java image 1](<img/[RoarCTF 2019]Easy Java-1.png>)
+![](img/[RoarCTF2019]EasyJava-1.png)
 
 #### [WEB-INF知识点](https://www.cnblogs.com/darkcyan/p/17668377.html#web-inf知识点)
 
@@ -59,7 +59,7 @@
 
 或者下载后用`jadx-gui`反编译
 
-![Alt text](<img/[RoarCTF 2019]Easy Java-2.png>)
+![](img/[RoarCTF2019]EasyJava-2.png)
 
 将`ZmxhZ3tjNmRkMGQ4Zi01YTQ4LTQ3MjQtYjIwOC04MGE2OTlkZmE1YWR9Cg==`进行`base64`解码即可
 

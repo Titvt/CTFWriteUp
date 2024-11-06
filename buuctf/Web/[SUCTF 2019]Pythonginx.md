@@ -46,11 +46,11 @@ def getUrl():
 
 接着用这种方法访问`/getUrl?url=file://suctf.c℆sr/local/nginx/conf/nginx.conf` 得知`flag`的位置
 
-![alt text](<img/[SUCTF 2019]Pythonginx-1.png>)
+![](img/[SUCTF2019]Pythonginx-1.png)
 
 然后获取`flag`
 
-![alt text](<img/[SUCTF 2019]Pythonginx-2.png>)
+![](img/[SUCTF2019]Pythonginx-2.png)
 
 ### 2.unicode爆破
 
@@ -91,11 +91,11 @@ if __name__=="__main__":
     get_unicode()
 ```
 
-![alt text](<img/[SUCTF 2019]Pythonginx-4.png>)
+![](img/[SUCTF2019]Pythonginx-4.png)
 
-![alt text](<img/[SUCTF 2019]Pythonginx-3.png>)
+![](img/[SUCTF2019]Pythonginx-3.png)
 
-![alt text](<img/[SUCTF 2019]Pythonginx-5.png>)
+![](img/[SUCTF2019]Pythonginx-5.png)
 
 
 1. urlsplit漏洞
