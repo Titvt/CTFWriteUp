@@ -94,7 +94,7 @@ tags: [CTF, PHP]
 
 结果为
 
-![php_unseriablize1](s1.png)
+![php_unseriablize1](phpUnserialize/s1.png)
 
 可以发现我们在反序列化时修改的 `$filename`的值在 `__wakeup()`函数时由 `flag.php`修改为了 `test.txt`
 
@@ -108,7 +108,7 @@ tags: [CTF, PHP]
 
 即可获取想要的文件的内容
 
-![php_unseriablize2](s2.png)
+![php_unseriablize2](phpUnserialize/s2.png)
 
 ## private protect变量构造
 
@@ -153,7 +153,7 @@ tags: [CTF, PHP]
 
 执行后可以看到
 
-![php_unseriablize3](s3.png)
+![php_unseriablize3](phpUnserialize/s3.png)
 
 命名方式为 `sess_session_id()`
 
@@ -221,11 +221,11 @@ O:1:"A":1:{s:8:"filename";s:8:"flag.php";}
 
 即可将反序列化的值存入到 `session`中使 `index.php`反序列化
 
-![php_unseriablize4](s4.png)
+![php_unseriablize4](phpUnserialize/s4.png)
 
 即可完成 `session反序列化`攻击
 
-![php_unseriablize5](s5.png)
+![php_unseriablize5](phpUnserialize/s5.png)
 
 ## PHAR利用
 
@@ -249,7 +249,7 @@ PHAR文件由3或4个部分组成
 
 (2)`manifest describing the contents`  //PHAR文件描述该部分存储文件名、文件大小等信息，如下图所示
 
-![php_unseriablize6](s6.png)
+![php_unseriablize6](phpUnserialize/s6.png)
 
 图中标出的地方，存储了经 `serialize()`的 `Meta-data`，有序列化过程必有反序列化过程，这就是我们的注入点
 
@@ -259,7 +259,7 @@ PHAR文件内容
 
 (4) [optional] `a signature for verifying Phar integrity (phar file format only)` // 可选的签名部分， 支持MD5和SHA1
 
-![php_unseriablize7](s7.png)
+![php_unseriablize7](phpUnserialize/s7.png)
 
 ### 攻击方法
 
@@ -295,7 +295,7 @@ It’s a PHP unserialization vulnerability Jim, but not as we know it提供了�
 
 可以从箭头中看到序列化后结果
 
-![php_unseriablize8](s8.png)
+![php_unseriablize8](phpUnserialize/s8.png)
 
 箭头标出 `Meta-data`部分，可以看到为序列化后结果
 
@@ -314,7 +314,7 @@ $filename = "phar://phar.phar/test.txt";
 echo file_get_contents($filename);
 ```
 
-![php_unseriablize9](s9.png)
+![php_unseriablize9](phpUnserialize/s9.png)
 
 可以看到输出了之前打包的 `phar`文件中,`test.txt`文件的内容 `test`，并成功实例化 `A`对象，调用了析构函数 `(__destruct)`
 
@@ -388,7 +388,7 @@ echo file_get_contents($filename);
 	echo $c;
 ```
 
-![php_unseriablize10](s10.png)
+![php_unseriablize10](phpUnserialize/s10.png)
 
 我们要让红线部分的数据修改为 `admin`，在代码里修改
 
@@ -407,15 +407,15 @@ echo file_get_contents($filename);
 	echo $c;
 ```
 
-![php_unseriablize11](s11.png)
+![php_unseriablize11](phpUnserialize/s11.png)
 
 所以我们要逃逸的字符串为 `";s:4:"pass";s:5:"admin";}`
 
-![php_unseriablize12](s12.png)
+![php_unseriablize12](phpUnserialize/s12.png)
 
 按照一个 `bb`转变为 `ccc`会逃逸 `1`个字符，如果我们要逃逸 `26`个字符，那么我们需要 `26`个 `bb`
 
-![php_unseriablize13](s13.png)
+![php_unseriablize13](phpUnserialize/s13.png)
 
 所以生成的 `name`值为 `bbbbbbbbbbbbbbbbbbbbbbbbbb";s:4:"pass";s:5:"admin";}`
 
@@ -445,7 +445,7 @@ echo file_get_contents($filename);
 	}
 ```
 
-![php_unseriablize14](s14.png)
+![php_unseriablize14](phpUnserialize/s14.png)
 
 可以看到在经过 `waf`函数后，逃逸后的反序列化长度符合，可以正常反序列化，反序列化 `}`前的值
 
@@ -501,7 +501,7 @@ echo file_get_contents($filename);
 
 我们需要逃逸这个部分
 
-![php_unseriablize15](s15.png)
+![php_unseriablize15](phpUnserialize/s15.png)
 
 ### 第二步
 
@@ -527,13 +527,13 @@ echo file_get_contents($filename);
 
 运行
 
-![php_unseriablize16](s16.png)
+![php_unseriablize16](phpUnserialize/s16.png)
 
 ### 第三步
 
 查看 `";s:4:"sign";s:48:"C`的长度
 
-![php_unseriablize17](s17.png)
+![php_unseriablize17](phpUnserialize/s17.png)
 
 发现长度为 `20`
 
@@ -543,10 +543,10 @@ echo file_get_contents($filename);
 
 则仅需要 `5`个 `flag`即可
 
-![php_unseriablize18](s18.png)
+![php_unseriablize18](phpUnserialize/s18.png)
 
 最终传值结果为
 
-![php_unseriablize19](s19.png)
+![php_unseriablize19](phpUnserialize/s19.png)
 
 参考https://www.cnblogs.com/ichunqiu/p/10484832.html
